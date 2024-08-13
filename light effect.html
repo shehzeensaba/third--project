@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Light Effect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .van {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(94, 94, 117);
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    margin: 20px;
+}
+
+.hover-light {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: box-shadow 0.9s ease;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.hover-light:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+    </style>
+</head>
+<body>
+    <div class="van">
+    <div class="image-container">
+        <img src="sun.jpg" alt="Sample Image" class="hover-light">
+    </div>
+    <div class="image-container">
+        <img src="mom.jpg" alt="Sample Image" class="hover-light">
+    </div>
+    <div class="image-container">
+        <img src="mom.jpg" alt="Sample Image" class="hover-light">
+    </div>
+    <div class="image-container">
+        <img src="mom.jpg" alt="Sample Image" class="hover-light">
+    </div>    <div class="image-container">
+        <img src="mom.jpg" alt="Sample Image" class="hover-light">
+    </div>    <div class="image-container">
+        <img src="mom.jpg" alt="Sample Image" class="hover-light">
+    </div>
+
+</div>
+
+
+</body>
+</html>

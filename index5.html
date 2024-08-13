@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flowers web</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<style>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+
+}
+
+
+.slider {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 7em;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual {
+    position: absolute;
+    width:100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #555d5e;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40d3dc;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 360px;
+}
+
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 20px;
+    background-color:gray;
+    z-index: 999;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    list-style: none;
+        width:26em;
+}
+   
+.logo h1{
+    width: 7em;
+    color: white;
+}
+
+.logo-text {
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    font-size: 26px;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar a {
+    color:white;
+}
+.nav-bar a:hover{
+    color:black;
+} */
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.flower {
+    width: 83em;
+    height:34em;
+    margin: 6em 0em 0em 0em;
+}
+.cat{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4em;
+    margin-bottom: 50px;
+}
+
+.red{
+    display: flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    padding: 70px;
+}
+
+.white{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    text-align: center;
+  font-family: Georgia, serif;
+  font-weight: bold;
+   padding:6px;
+}
+
+.pink {
+    height: 33vh;
+    width: 13em;
+    border-radius: 2%;
+}
+.pen{
+    height: 35vh;
+    width: 25em;
+    border-radius: 4%;
+    gap:2em;
+}
+.bat{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: row;
+gap:2em;
+margin-bottom:60px;
+}
+
+
+.width {
+    background-color: white;
+    border-radius: 5px;
+    height: 44vh;
+    text-align: center;
+    height: 15em;
+    box-shadow: 1px 0px 2px 3px;
+    font-weight: bolder;
+}
+
+
+.abc{
+    font-weight:bolder;
+   text-align: center;
+}
+.lion{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+
+.img{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    height: 5em;
+}
+.watches{
+    background-color:wheat;
+    border-radius: 11px;
+    
+}
+ .lion p{
+    width:25em;
+    font-weight: bold;
+    font-family: system-ui;
+
+} 
+.lion1{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    gap: 40px;
+    transition: transform 0.2s ease;
+   background-color: black;
+}
+.lion:hover .lion1 {
+    transform: scale(1.1);
+}
+
+
+.lion1 img{
+    height: 25em;
+width: 33em;
+}
+.ten1{
+    margin: 2em;
+    color:white;
+}
+.nice video{
+    width: 20em;
+    height:32em;
+
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+button.btn {
+        background-color: gray;
+        font-size: 20px;
+        border-radius: 4px;
+        color:white;
+
+    }
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    border-top: 1px solid #444;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: black;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color:red;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+#ff6600
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.footer {
+background-color:rgb(247, 233, 233) ;
+height: 20em;
+}
+.flower:hover{
+    transform: scale(0.99);
+}
+.watches:hover .pen {
+transform: scale(0.78);}
+
+
+.hamburger-icon {
+    display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:gray;
+    z-index: 999;
+}
+
+.logo-text {
+    color: white;
+}
+
+.hamburger-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.hamburger-icon .fa-bars,
+.hamburger-icon .fa-x {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    font-size: 22px;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+.nav-bar a:hover{
+    color:black;
+} 
+@media screen and (max-width: 850px) {
+    header {
+        display: block;
+    }
+
+    .nav-bar {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .fa-x {
+        display: none;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-bar {
+        margin-top: 1rem;
+        height: 284px;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+  <!-- <div class="container">
+    <header>
+      <div class="logo">
+        <h1><i class="fa-solid fa-fan"></i>
+          FLOWER'S</h1>
+      </div>
+      <ul class="nav-bar">
+        <li class="items"><a href="#home">Home</a></li>
+        <li class="items"><a href="about.html">About</a></li>
+        <li class="items"><a href="#menu">Menu</a></li>
+        <li class="items"><a href="#offers">offers</a></li>
+        <li class="items"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </header> -->
+
+    <div class="wrapper">
+      <header>
+          <div class="logo">
+              <h1 class="logo-text"><i class="fa-solid fa-fan"></i>
+                  FLOWER'S</h1>
+              <button class="hamburger-icon">
+                  <label for="dropdown">
+                      <i class="fa-solid fa-bars"></i>
+                      <i class="fa-solid fa-x"></i>
+                  </label>
+                  <input type="checkbox" id="dropdown" />
+              </button>
+          </div>
+          <ul class="nav-bar">
+              <li class="items"><a href="index.html">Home</a></li>
+              <li class="items"><a href="#about">About Us</a></li>
+              <li class="items"><a href="index1.html">Menu</a></li>
+              <li class="items"><a href="index2.html">Offers</a></li>
+              <li class="items"><a href="contact.html">Contact Us</a></li>
+          </ul>
+      </header>
+  </div>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        
+        <div class="slide first">
+            <img src="big4.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="jnk.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="sales.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="1.jpg" alt="Image 4">
+        </div>
+        
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+    </div>
+    
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+</div>
+
+  <div class="red">
+    <h1>Hand-delivered Across India</h1>
+  </div>
+
+  <div class="cat" id="menu">
+    <img src="delhi.jpg" alt="">
+    <img src="_chennai.jpg" alt="">
+    <img src="_hyderabad.jpg" alt="">
+    <img src="mumbai.jpg" alt="">
+    <img src="kolkata.jpg" alt="">
+    <img src="banagalore.jpg" alt="">
+  </div>
+
+  <div class="red">
+    <h1>Curated Collections:</h1>
+  </div>
+
+
+
+  <div class="white" id="offers">
+    <div class="watches">
+      <img class="pen" src="d.jpg" alt="">
+      <div class="box">
+        <p>Rose</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$30</button>
+      </div>
+    </div>
+
+    <div class="watches">
+      <img class="pen" src="pic3.jpg" alt="">
+      <div class="box">
+        <p>Jasmine</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$50</button>
+      </div>
+    </div>
+
+    <div class="watches">
+      <img class="pen" src="picture6.jpg" alt="">
+      <div class="box">
+        <p>Pink Rose</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$40</button>
+      </div>
+    </div>
+
+
+    <div class="watches">
+      <img class="pen" src="image1.avif" alt="">
+      <div class="box">
+        <p>Lily</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$20</button>
+      </div>
+    </div>
+    <div class="watches">
+      <img class="pen" src="flower8.jpg" alt="">
+      <div class="box">
+        <p>Red Rose</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$32</button>
+      </div>
+    </div>
+    <div class="watches">
+      <img class="pen" src="pic1.jpg" alt="">
+      <div class="box">
+        <p>4 Flowers bouquet</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$20</button>
+      </div>
+    </div>
+
+    <div class="watches">
+      <img class="pen" src="pic2.jpg" alt="">
+      <div class="box">
+        <p>Rose bouquet</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+         &nbsp;
+        <button class="btn">$60</button>
+      </div>
+    </div>
+
+
+
+    <div class="watches">
+      <div class="box">
+        <img class="pen" src="rose.jpg" alt="">
+        <p> Rose</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$60</button>
+      </div>
+    </div>
+
+    <div class="watches">
+      <div class="box">
+        <img class="pen" src="rose3.jpg" alt="">
+
+        <p>colorful Rose</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <button class="btn">$40</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lion">
+    <img class="ten" src="big2.jpg" alt="">
+  </div>
+
+
+  <div class="name">
+    <div class="red">
+      <h1>Show by Occasion</h1>
+    </div>
+  </div>
+
+  <div class="lion" id="about">
+    <div class="lion1">
+      <img class="ten" src="flowershop1.jpg" alt="">
+      <div class="ten1">
+        <h1>THE FLOWER COMPANY TALE</h1>&nbsp;
+        <p>
+          Each milestone, each relationship, every kind of bond calls for a unique celebration. A celebration of moments
+          and emotions that are just blooming, even celebrating those that have already blossomed. For such moments,
+          there are luxury flower arrangements by The Flower Company Aesthetically appealing to the eye, these flower
+          arrangements mark the strength of a bond, bring out the butterfly-blushed smile of an 18-year-old girl, highlight the rouge on a mother’s face when she hears from
+          herdistant son. These flowers laden this moment with beauty, luxury and panache and evoke a part of you that
+          only poetry can do justice to..
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="red">
+    <h1>Delivering Blooms Worldwide</h1>
+  </div>
+
+  <div class="bat">
+    <div class="width">
+      <img class="pink" src="USA.jpg" alt="">
+      <div class="abc">
+      <p>USA</p>
+    </div>
+    </div>
+    <div class="width">
+      <img class="pink" src="UK (2).jpg" alt="">
+      <div class="abc">
+      <p>UK</p>
+    </div>
+  </div>
+  <div class="width">
+      <img class="pink" src="Canada (1).jpg" alt="">
+      <div class="abc">
+      <p>Canada</p>
+    </div>
+  </div>
+
+  <div class="width">
+      <img class="pink" src="Australia (1).jpg" alt="">
+      <div class="abc">
+      <P>Australia</P>
+    </div>
+  </div>
+  <div class="width">
+      <img class="pink" src="UAE.jpg" alt="">
+      <div class="abc">
+      <p>UAE</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="red">
+    <h1>Now Streaming on Interflora</h1>
+  </div>
+
+
+  <div class="nice">
+    <div class="content2">
+      <video src="video.mp4" controls muted autoplay></video>
+      <video src="video2.mp4" controls muted autoplay></video>
+      <video src="video1.mp4" controls muted autoplay></video>
+    </div>
+  </div>
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-section logo-section">
+      <h2>Your Logo</h2>
+      <p>Your tagline here</p>
+      <p>About Us</p>
+      <p>We want to help bring talented students and unique startups together.</p>
+      <p>Contact Us</p>
+      <p>📞 +91 9999 999 999</p>
+      <p>📧 youremailid.com</p>
+    </div>
+    <div class="footer-section">
+      <h3>Information</h3>
+      <p>About Us</p>
+      <p>More Search</p>
+      <p>Blog</p>
+      <p>Testimonials</p>
+      <p>Events</p>
+    </div>
+    <div class="footer-section">
+      <h3>Helpful Links</h3>
+      <p>Services</p>
+      <p>Supports</p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+    </div>
+    <div class="footer-section">
+      <h3>Subscribe More Info</h3>
+      <input type="email" placeholder="Enter your Email">
+      <button>Subscribe</button>
+    </div>
+  </footer>
+</body>
+
+</html>

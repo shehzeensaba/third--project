@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+}
+
+.top-inner {
+
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+
+.top-front,.top-front1,.top-front2,.top-front3, .top-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.top-front {
+    background-image: url("https://i.pinimg.com/236x/45/7e/aa/457eaaa549619b64ebf793049f8c4ec1.jpg");
+    color: white;
+}
+
+.top-front1 {
+    background-image: url("https://i.pinimg.com/236x/44/f0/c6/44f0c6329076f33202fd56b3a2882104.jpg");
+    color: white;
+}
+.top-front2 {
+    background-image: url("https://i.pinimg.com/236x/ff/c4/24/ffc424413e9a296f4b60466d43d8dfa2.jpg");
+    color: white;
+}
+.top-front3 {
+    background-image: url("https://i.pinimg.com/236x/4b/85/5f/4b855f543eed00998db8e264a0454e0d.jpg");
+    color: white;
+}
+.top-back {
+    background: #fff; 
+    color: #333;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.top-inner:hover{
+    transform: rotateY(180deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="top" onclick="toggleContent()">
+        <div class="top-inner">
+            <div class="top-front">
+                <h2>Flowers in world</h2>
+            </div>
+            <div class="top-back">
+                <p>In a world that is filled with hate, ugliness, poverty, diseases and famine, flower and the usage of it in our lives brings a sense of freshness and brightness..</p>
+            </div>
+        </div>
+        <div class="top-inner">
+            <div class="top-front1">
+                <h2>Flowers</h2>
+            </div>
+            <div class="top-back">
+                <p>Flowers carry a lot of importance in our lives. In India, no worship of God is complete without some kind of flower. Devotees make a garland of flowers to dedicate it to God.</p>
+            </div>
+        </div>
+        <div class="top-inner">
+            <div class="top-front2">
+                <h2>Flowers</h2>
+            </div>
+            <div class="top-back">
+                <p>The bride and groom wear garlands of flowers to signify their marriage. In addition, flowers smell so good that we use it in different places by planting them in our garden. This way, the beauty of our place enhances.
+
+                    .</p>
+            </div>
+        </div>
+        <div class="top-inner">
+            <div class="top-front3">
+                <h2>Flowers</h2>
+            </div>
+            <div class="top-back">
+                <p>The bride and groom wear garlands of flowers to signify their marriage. In addition, flowers smell so good that we use it in different places by planting them in our garden. This way, the beauty of our place enhances.
+
+                    .</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+img.ooty {
+    width: 7em;
+    border-radius: 29px;
+    object-fit: cover;
+}
+img.loader {
+    width: 7em;
+    border-radius: 29px;
+    object-fit: cover;
+}
+
+.loader span:nth-child(1){
+    width: 97%;
+    height: 80%;
+    top: 5em;
+    left: 5em;
+    object-fit: cover;
+}
+
+.loader span:nth-child(2){
+    width: 97%;
+    height: 80%;
+    top: -5em;
+    left:5em ;
+    object-fit: cover;
+}
+.loader span:nth-child(3){
+    width: 97%;
+    height: 80%;
+    top: 5em;
+    left:-5em ;
+    object-fit: cover;
+}
+.loader span:nth-child(4){
+    width: 97%;
+    height: 80%;
+    top: -5em;
+    left:-5em ;
+    object-fit: cover;
+}
+
+.loader {
+    background-image: url("https://i.pinimg.com/236x/45/7e/aa/457eaaa549619b64ebf793049f8c4ec1.jpg");
+    animation: rotating 2s linear infinite;
+    min-width: 11%;
+    max-width: max-content;
+    max-height: 18%;
+}
+        @keyframes rotating{
+            to{
+                transition: rotate(1turn);
+            }
+        }
+        .loader span{
+            animation: de-rotating 4s linear infinite;
+        }
+        @keyframes de-rotating{
+            from,to{
+                transform: rotate(0deg) scale(0.5);
+
+            }
+            50% {
+                transform: rotate(-180deg)
+                scale(1.2);
+            }
+        }
+        .mom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 83vh;
+            
+
+        }
+        .loader, .loader span {
+    width: 15%;
+    height: 40%;
+    border: 3px solid black;
+    font-size: 31px;
+    border-radius: 1em;
+    position: absolute;
+    mix-blend-mode: screen;
+    background-repeat: no-repeat;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+img.ooty {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:22px;
+}
+<div class="mom">
+    <div class="loader">
+        <span>
+            <img class="ooty" src="https://i.pinimg.com/236x/44/f0/c6/44f0c6329076f33202fd56b3a2882104.jpg" alt=""> 
+
+        </span>
+        <span>
+            <img class="ooty" src="https://i.pinimg.com/236x/2c/aa/32/2caa325ff6d03b26bfd8b94c6adb7b58.jpg" alt="">
+        </span> 
+        <span>
+            <img  class="ooty"src="https://i.pinimg.com/236x/4b/85/5f/4b855f543eed00998db8e264a0454e0d.jpg" alt="">
+        </span>
+        <span>
+          <img class="ooty" src="https://i.pinimg.com/236x/ff/c4/24/ffc424413e9a296f4b60466d43d8dfa2.jpg" alt="">
+        </span>
+    </div>
+</div>

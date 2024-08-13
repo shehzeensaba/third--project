@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowers web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 20px;
+    background-color:gray;
+    z-index: 999;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    list-style: none;
+        width:26em;
+}
+   
+.logo h1{
+    width: 7em;
+    color: white;
+}
+
+.logo-text {
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    font-size: 26px;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar a {
+    color:white;
+}
+.nav-bar a:hover{
+    color:black;
+}
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* .flower{
+    width: 83em;
+    height: 42em;
+    border-radius: 2em;
+} */
+.flower {
+    width: 83em;
+    height:34em;
+    /* border-radius: 1em; */
+    margin: 6em ;
+}
+.cat{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4em;
+}
+
+.red{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    height: 2em;
+}
+
+.big{
+    display: flex;
+    justify-content:center;
+}
+/* .pink{
+    height:30vh;
+    width:16em;
+    border-radius:5%;
+    
+} */
+/* .pink {
+    height: 35vh;
+    width: 25em;
+    border-radius: 4%;
+} */
+.pink {
+    height: 33vh;
+    width: 13em;
+    border-radius: 4%;
+}
+.pen{
+    height: 35vh;
+    width: 25em;
+    border-radius: 4%;
+    gap:2em;
+}
+.bat{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap:2em;
+}
+.lion{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.img{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    height: 5em;
+}
+
+
+
+</style>
+  </head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+               <h1><i class="fa-solid fa-fan"></i>
+             FLOWER'S</h1>
+            </div>
+            <ul class="nav-bar">
+                <li class="items"><a href="#home">Home</a></li>
+                <li class="items"><a href="#about">About</a></li>
+                <li class="items"><a href="#menu">Menu</a></li>
+                <li class="items"><a href="#Offers">Offers</a></li>
+                <li class="items"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </header>
+    </div>     
+
+    <div class="picture"id="home">
+        <div class="green">
+           <img class="flower" src="big4.jpg" alt="">
+         </div>
+        
+         <div class="name">
+      <div class="red">
+            <h2>Hand-delivered Across India</h2>
+      </div>
+      </div>
+      
+      <div class="cat" id="menu">
+         <img src="delhi.jpg" alt="">
+         <img src="_chennai.jpg" alt="">
+         <img src="_hyderabad.jpg" alt="">
+         <img src="mumbai.jpg" alt="">
+         <img src="pune.jpg" alt="">
+         <img src="banagalore.jpg" alt="">
+      </div>
+
+      <div class="red">
+         <h2>Curated Collections:</h2>
+      </div>
+      
+      
+      <div class="big" >
+      <div class="white" >
+        <img class="pen" src="folwer4.jpg" alt="">
+        <img class="pen" src="image5.jpg" alt="">
+        <img class="pen" src="image2.jpg" alt="">
+        <img class="pen" src="inage3.jpg" alt="">      
+        <img class="pen" src="image3.jpg" alt="">      
+        <img class="pen" src="image6.jpg" alt="">      
+      </div>
+    </div>
+    <div class="lion">
+        <img class="ten" src="big2.jpg" alt="">
+    </div>
+
+    <div class="red">
+        <h2>Delivering Blooms Worldwide</h2>
+     </div>
+
+     <div class="bat"id="about">
+        <div class="width">
+          <img class="pink" src="india.jpg" alt="">
+          <img class="pink" src="uk.jpg" alt="">
+          <img class="pink" src="netherland.jpg" alt="">
+          <img class="pink" src="australia.jpg" alt="">      
+          <img class="pink" src="canada.jpg" alt="">      
+          <img class="pink" src="united state.jpg" alt="">      
+        </div>
+      </div>
+      <div class="name">
+      <div class="red">
+        <h2>Wall of Fame</h2>
+     </div>
+    </div>
+
+     <div class="lion">
+        <img class="ten" src="big pic.jpg" alt="">
+        <!-- <img class="ten" src="big2.jpg" alt=""> -->
+        <img class="ten" src="big3.jpg" alt="">
+        
+     </div>
+</body>
+</html>

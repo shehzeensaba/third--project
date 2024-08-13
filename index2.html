@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>flower web</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+
+
+}
+ .house {
+ position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 3em;
+ }
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('all8.jpg') no-repeat center center/cover;
+    transition: transform 0.5s ease;
+}
+
+.digital{
+     position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+     backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+
+    
+
+}
+.house:hover .background {
+    transform: scale(1.1);
+}
+
+.house:hover .digital {
+    transform: scale(0.78);
+ } 
+
+.mat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 30px;
+}
+
+
+.orange{
+    border-radius:50%;
+    margin-bottom: 9px;
+    border: 3px solid black;
+}
+
+ .ten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    flex-direction: row;
+    gap:147px;
+
+} 
+.run p{
+    font-size: larger;
+}
+.digital p{
+    font-size: x-large;
+}
+.ten button{
+    padding: 10px;
+    background-color:wheat;
+    border-radius: 2em;
+    font-weight: bold;
+    border: 2px solid black;
+    font-size: larger;
+}
+.btn:hover {
+    color:purple;
+     transform: scale(1.1);
+}
+.broder{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.dream {
+    height: 43vh;
+    width: 21em;
+    gap: 2em;
+    object-fit: cover;
+  }
+ .run{
+     background-color:white;
+     border-radius:5px;
+    /* height:44vh; */
+    text-align: center;
+    /* height: 18em; */
+    height: auto;
+    padding: 7px;
+    box-shadow: 1px 0px 2px 3px;
+    font-weight:bolder;
+}
+
+ .run:hover{
+    background-color:plum;
+ }
+
+    
+
+ .gray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 41em;
+
+
+ }
+  .orange:hover {
+    transform: scale(1.1);
+    border-radius: 55px 55px 55px 55px;
+}
+ 
+ .run:hover{
+    transform: scale(0.89);
+ }
+ 
+
+ 
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    border-top: 1px solid #444;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: black;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color:red;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.footer {
+background-color:plum;
+color: white;
+height:14em;
+font-size: 22px;
+}
+.ram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:nowrap ;
+    margin:9em;
+    perspective: 1000px;
+}
+
+.scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:nowrap ;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    gap: 20em;
+
+}
+
+.cube {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    animation: rotate 5s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    backface-visibility: hidden;
+
+}
+
+.face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front  { transform: rotateY(  0deg) translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right  { transform: rotateY( 90deg) translateZ(100px); }
+.top    { transform: rotateX( 90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate {
+    from { transform: rotateX(-30deg) rotateY(-45deg); }
+    to   { transform: rotateX(-30deg) rotateY(315deg); }
+}
+
+
+
+
+        .hamburger-icon {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+    background-color:#bc79ac73;
+    z-index: 999;
+}
+
+.logo-text {
+    color: white;
+}
+.logo img {
+    width: 153px;
+    height: 52px;
+    object-fit: cover;
+}
+.hamburger-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.hamburger-icon .fa-bars,
+.hamburger-icon .fa-x {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.hamburger-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    font-size: 22px;
+    font-weight: 500;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar a {
+    font-size: 26px;
+    color:#df26cd;
+    text-decoration: none;
+}
+
+.nav-bar a.active{
+    color: #df26cd;
+
+}
+.nav-bar a:hover {
+    color: #df26cd;
+}
+li.items:hover {
+    background: white;
+    padding: 5px 9px;
+    border-radius: 12px;
+    border-bottom: 6px solid #f113e6;
+}
+li.items.active {
+    background: white;
+    padding: 5px 9px;
+    border-radius: 12px;
+    border-bottom: 6px solid #f113e6;
+}
+.black{
+    display: flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    white-space: nowrap;
+    padding: 70px;
+    color: black;
+}
+
+
+.van {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 1em;
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    margin: 20px;
+}
+
+    
+
+.hover-light {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transition: box-shadow 0.9s ease;
+    cursor: pointer;
+    border: 3px solid purple;
+    object-fit: cover;
+}
+
+.hover-light:hover {
+    box-shadow: 0 0 60px purple;
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        display: block;
+    }
+
+    .nav-bar {
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .fa-x {
+        display: none;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .nav-bar {
+        margin-top: 1rem;
+        height:330px;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width:768px){
+    .fade{
+    display:none;
+    flex-direction: column;
+   }
+   .mat{
+    flex-direction:row;
+   }
+   footer.footer {
+    font-size: 17px;
+    height: auto;
+}
+.footer-section input[type="email"] {
+    padding: 1px;
+
+}
+.broder {
+    gap: 50px;
+}
+.van{
+    margin-bottom: 0%;
+}
+.run{
+    width: 28%;
+
+}
+.dream {
+    height: 26vh;
+    width: 12em;
+    gap: 2em;
+    object-fit: cover;
+}
+.scene{
+    flex-direction: column;
+}
+.ten button{
+    font-size: x-large;
+}
+.ram{
+    margin-bottom:15em;
+    height: 69vh;
+}
+.logo img {
+    width: 240px;
+    height: 74px;
+    object-fit: cover;
+}
+}
+
+@media only screen and (min-width:556px) and (max-width:765px){
+    .fade{
+    display:none;
+    flex-direction: column;
+   }
+   .mat{
+    flex-direction:row;
+   }
+   footer.footer {
+    font-size: 17px;
+    height: auto;
+}
+.footer-section input[type="email"] {
+    padding: 1px;
+
+}
+.broder {
+    gap: 59px;
+}
+.van{
+    margin-bottom: 0%;
+}
+.run{
+    width: 28%;
+
+}
+.dream {
+    height: 33vh;
+    width: 12em;
+    gap: 2em;
+    object-fit: cover;
+}
+.ram{
+    margin-bottom:9em;
+}
+.ten button{
+    font-size: x-large;
+}
+.logo img {
+    width: 240px;
+    height: 74px;
+    object-fit: cover;
+}
+}
+@media only screen and (min-width:375px) and (max-width:555px){
+    .fade{
+    display:none;
+    flex-direction: column;
+   }
+   .mat{
+    flex-direction: column;
+   }
+   footer.footer {
+    height: auto;
+    font-size:25px;
+    gap: 21px;
+    flex-direction: column;
+align-items: flex-start;
+}
+.footer-section input[type="email"] {
+    padding: 22px;
+    width: 100%;
+    font-size: larger;
+}
+.footer-section button {
+    font-size:large;
+    width: 81%;
+}
+.dream {
+    height: 35vh;
+    width: 100%;
+    gap: 2em;
+    object-fit: cover;
+}
+.run{
+    width: 70%;
+
+}
+.broder {
+    gap: 59px;
+}
+.van{
+    margin-bottom: 0%;
+}
+.scene{
+    flex-direction: column;
+}
+.ram{
+    margin-bottom:15em;
+   height: 79vh;
+}
+.ten button{
+    font-size: x-large;
+}
+.logo img {
+    width: 240px;
+    height: 74px;
+    object-fit: cover;
+}
+.footer-section {
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+}
+}
+
+@media only screen and (max-width:375px){
+   .fade{
+    display:none;
+    flex-direction: column;
+   }
+   .mat{
+    flex-direction: column;
+   }
+   footer.footer {
+    height: auto;
+    font-size:25px;
+    gap: 21px;
+    flex-direction: column;
+align-items: flex-start;
+}
+
+.footer-section input[type="email"] {
+    padding: 1px;
+
+}
+.dream {
+    height: 35vh;
+    width: 100%;
+    gap: 2em;
+    object-fit: cover;
+}
+.run{
+    width: 70%;
+
+}
+.broder {
+    gap: 59px;
+}
+.scene {
+ flex-direction: column;
+ gap: 30em;
+}
+.ram{
+    font-size: x-small;
+    margin-bottom:25em;
+    height: 96vh;
+    
+}
+.ten button{
+    font-size: large;
+}
+.logo img {
+    width: 240px;
+    height: 74px;
+    object-fit: cover;
+}
+.footer-section {
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+}
+}
+    </style>
+</head>
+<body>
+
+   
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <div class="logo-text"><img src="logo.png" alt=""></div>
+                <button class="hamburger-icon">
+                    <label for="dropdown">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-x"></i>
+                    </label>
+                    <input type="checkbox" id="dropdown" />
+                </button>
+            </div>
+            <ul class="nav-bar">
+                <li class="items"><a href="index.html">Home</a></li>
+                <li class="items active">
+                    <a href="index2.html"class="active">About Us</a></li>
+                <li class="items"><a href="index.html">Menu</a></li>
+                <li class="items"><a href="index.html">Offers</a></li>
+                <li class="items"><a href="index3.html">Contact Us</a></li>
+            </ul>
+        </header>
+    </div>
+<div class="call">
+
+    <div class="house"id="about">
+        <div class="background"></div>
+        <div class="digital">
+     <h1>The  Colorful Flowers </h1> 
+     <p>
+        A flower is the reproductive structure found in flowering plants (angiosperms). 
+        It is typically composed of petals, sepals, stamens (male reproductive organs), 
+        and pistils (female reproductive organs). 
+     </p>
+
+    </div>
+</div>
+<div class="black">
+    <h1>Choose Flowers</h1>
+  </div>
+
+<div class="mat">
+    <div class="tea">
+      <img class="orange" src="all.jpg" alt="">
+      <div class="ten">
+        <button class="btn">All Roses flowers</button>
+    </div>
+</div>
+
+    <div class="tea">
+      <img class="orange" src="all2.jpg" alt="">
+      <div class="ten">
+        <button class="btn">Flower in glass vase</button>
+    </div>
+</div>
+
+    <div class="tea">
+      <img class="orange" src="all4.jpg" alt="">
+      <div class="ten">
+  <button class="btn">Lily flowers bouquet</button>
+</div>
+</div>
+
+  <div class="tea">
+      <img class= "orange" src="all5.jpg" alt="">
+      <div class="ten">
+        <button class="btn">All flower bouquet</button>
+    </div>
+</div>
+
+    <div class="tea">
+      <img class= "orange" src="a3.jpg" alt="">  
+      <div class="ten">
+        <button class="btn">All flower bouquet</button>
+    </div>
+    </div>
+  </div>
+
+
+
+  <div class="black">
+    <h1>luxury Collections:</h1>
+  </div>
+   <div class="broder">
+    <div class="run">
+        <div class="blue">
+       <img class="dream"   src="lll.jpg" alt="">
+       <p>Flowers</p>
+      </div>
+    </div>
+
+    <div class="run">
+        <div class="blue">
+       <img class="dream"  src="w.jpg" alt="">
+       <p>Flowers</p>
+      </div>
+    </div>
+    <div class="run">
+        <div class="blue">
+       <img class="dream" src="https://theflowercompany.in/cdn/shop/files/ExoticMix_GrandeCubo_400x.jpg?v=1683395031" alt="">
+       <p>Flowers</p>
+      </div>
+    </div>
+    
+    
+    <div class="run">
+        <div class="blue">
+       <img class="dream" src="https://theflowercompany.in/cdn/shop/products/WildMix-GrandeRonde_400x.jpg?v=1639594603" alt="">
+       <p>Flowers</p>
+      </div>
+    </div>
+    
+    <div class="run">
+        <div class="blue">
+       <img class="dream"  src="https://theflowercompany.in/cdn/shop/products/IMG_0313-01-800x800_400x.jpg?v=1571737876" alt="">
+       <p>Flowers</p>
+      </div>
+    </div>
+    
+    <div class="run">
+        <div class="blue">
+       <img class="dream"   src="https://theflowercompany.in/cdn/shop/products/Spring-Mix_0254ecc3-5540-48c8-bb77-7b235986bce1_400x.jpg?v=1571737876" alt="">
+       <p>Flowers</p>
+      </div>
+    </div>
+    
+    <div class="run">
+        <div class="blue">
+       <img  class="dream" src="https://theflowercompany.in/cdn/shop/products/Lilies_400x.jpg?v=1571737875" alt="">
+         <p>Flowers</p>
+      </div>
+    </div>
+    
+    <div class="run">
+        <div class="blue">
+       <img   class="dream" src="https://theflowercompany.in/cdn/shop/products/Classic-Mix_400x.jpg?v=1571737876" alt="">
+          <p>Flowers</p>
+      </div>
+    </div>
+      
+
+    <div class="run">
+        <div class="blue">
+       <img   class="dream" src="https://theflowercompany.in/cdn/shop/products/Roses-_-Gypsos_24b19f1a-f0ac-40d9-8c58-ee7d009e778e_400x.jpg?v=1571737876" alt="">
+          <p>Flowers</p>
+      </div>
+    </div>
+
+
+    <div class="run">
+        <div class="blue">
+       <img   class="dream" src="https://theflowercompany.in/cdn/shop/files/StardustClassicRonde_400x.jpg?v=1683394579" alt="">
+          <p>Flowers</p>
+      </div>
+    </div>
+    <div class="run">
+        <div class="blue">
+       <img   class="dream" src="https://theflowercompany.in/cdn/shop/products/Wild-Mix_090c10ee-33d6-4417-ace7-f06d2e8307b5_400x.jpg?v=1571737876" alt="">
+          <p>Flowers</p>
+      </div>
+    </div>
+    <div class="run">
+        <div class="blue">
+       <img   class="dream" src="https://theflowercompany.in/cdn/shop/files/Vibrant-GraneRonde_400x.jpg?v=1683281153" alt="">
+          <p>Flowers</p>
+      </div>
+    </div>
+    </div>
+   
+    <div class="black">
+        <h1>luxury decoration:</h1>
+      </div>
+    <div class="van">
+        <div class="image-container">
+            <img src="dad.jpg" class="hover-light">
+        </div>
+        <div class="image-container">
+            <img src="fff.jpg" class="hover-light">
+        </div>
+        <div class="image-container">
+            <img src="mam.jpg" alt="Sample Image" class="hover-light">
+        </div>
+        <div class="image-container">
+            <img src="num.jpg" class="hover-light">
+        </div>    <div class="image-container">
+            <img src="of.jpg" alt="Sample Image" class="hover-light">
+        </div>    <div class="image-container">
+            <img src="aws.jpg" alt="Sample Image" class="hover-light">
+        </div>
+    
+    </div>
+    
+
+
+    <div class="black">
+        <h1>luxury Flowers</h1>
+      </div>
+
+<div class="ram">
+    <div class="scene">
+        <div class="cube">
+            <div class="face front"><img src="/m2.jpg" alt="Front"></div>
+            <div class="face back"><img src="/e.jpg" alt="Back"></div>
+            <div class="face left"><img src="/K.JPG" alt="Left"></div>
+            <div class="face right"><img src="/S.jpg" alt="Right"></div>
+            <div class="face top"><img src="/ee.jpg" alt="Top"></div>
+            <div class="face bottom"><img src="/mm.jpg" alt="Bottom"></div>
+        </div>
+        <div class="cube">
+            <div class="face front"><img src="/11.jpg" alt="Front"></div>
+            <div class="face back"><img src="/qq.jpg" alt="Back"></div>
+            <div class="face left"><img src="/c.jpg" alt="Left"></div>
+            <div class="face right"><img src="/rose3.jpg" alt="Right"></div>
+            <div class="face top"><img src="/about1.jpg" alt="Top"></div>
+            <div class="face bottom"><img src="/mm.jpg" alt="Bottom"></div>
+        </div>
+        <div class="cube">
+            <div class="face front"><img src="/as.jpg" alt="Front"></div>
+            <div class="face back"><img src="/bbb.jpg" alt="Back"></div>
+            <div class="face left"><img src="us.jpg"alt="Left"></div>
+            <div class="face right"><img src="/nk.jpg" alt="Right"></div>
+            <div class="face top"><img src="/blue.jpg" alt="Top"></div>
+            <div class="face bottom"><img src="/na.jpg" alt="Bottom"></div>
+        </div>
+    </div>
+</div>
+
+  
+
+  <footer class="footer">
+    <div class="footer-section logo-section">
+      <h2>Your Logo</h2>
+      <p>Your tagline here</p>
+      <p>About Us</p>
+      <p>We want to help bring talented students and unique startups together.</p>
+      <p>Contact Us</p>
+      <p>📞 +91 9999 999 999</p>
+      <p>📧 youremailid.com</p>
+    </div>
+    <div class="footer-section">
+      <h3>Information</h3>
+      <p>About Us</p>
+      <p>More Search</p>
+      <p>Blog</p>
+      <p>Testimonials</p>
+      <p>Events</p>
+    </div>
+    <div class="footer-section">
+      <h3>Helpful Links</h3>
+      <p>Services</p>
+      <p>Supports</p>
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+    </div>
+    <div class="footer-section">
+      <h3>Subscribe More Info</h3>
+      <input type="email" placeholder="Enter your Email">
+      <button>Subscribe</button>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

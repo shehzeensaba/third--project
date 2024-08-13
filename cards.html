@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overlay Effect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    width: 342px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.card h2{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: serif;
+}
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+.parallex{
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+        }
+        .parallex1{
+            background-image: url(https://cdn.pixabay.com/photo/2022/04/05/14/12/flowers-7113718_1280.jpg);
+
+        }
+        .parallex2{
+            background-image: url(https://cdn.pixabay.com/photo/2018/04/21/19/28/flower-3339266_960_720.jpg);
+            object-fit: cover;
+        }
+        .parallex3{
+            background-image: url(https://cdn.pixabay.com/photo/2013/10/29/18/20/flower-202483_1280.jpg);
+            /* object-fit: cover; */
+        }
+    .content{
+        height:244px;
+        background-image: linear-gradient(to right ,pink, rgb(177, 169, 169));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        flex-direction: column;
+        font-family:serif;
+        object-fit: cover;
+        color:black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <img src="d.jpg" alt="Image">
+        <div class="overlay">
+            <h2> Rose</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="pic3.jpg" alt="Image">
+        <div class="overlay">
+            <h2>Jasmine</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="picture6.jpg" alt="Image">
+        <div class="overlay">
+            <h2>Pink Rose</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="image1.avif" alt="Image">
+        <div class="overlay">
+            <h2>Lily</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="flower8.jpg" alt="Image">
+        <div class="overlay">
+            <h2>Red Rose</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="pic1.jpg" alt="Image">
+        <div class="overlay">
+            <h2>4 Flowers bouquet</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="pic2.jpg" alt="Image">
+        <div class="overlay">
+            <h2>Rose bouquet</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="rose.jpg" alt="Image">
+        <div class="overlay">
+            <h2>Rose</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="auto.jpg" alt="Image">
+        <div class="overlay">
+            <h2>colorful Rose</h2>
+            <p>Some description goes here.</p>
+        </div>
+    </div>
+</div>
+
+<div class="parallex parallex1"></div>
+    <div class="content">
+        <h1>FLOWER'S</h1>
+        <p>Flowers are the most valubale gifts in nature.flowers are beautiful and fragrant.so many people enjoy seeing the flowers.there are so many types of flowers in the world.flowers are offered to god and on special occasions to near and dear.
+            Flowers like roses,lilies,tulips sunflowers,chyrantysum,are famous flowers all over the world.they are used for decorating temples houses and are used in weddings etc....</p>
+    </div>
+
+<div class="parallex parallex2"></div>
+    <div class="content">
+        <h1>FLOWER'S</h1>
+        <p>Flowers are really soft and beautiful.they appear in thousands of colors and mixed colors.flower are very attractive.there are many people who liked the flowers have raised the gardens of flowers
+            people compared the beautiful faces and palms with flowers.hence they are beautiful.flowers are really beautiful objects.they allow us to carry to near and dear when they are sick or when they got promotion etc...</p>
+    </div>
+    
+    <div class="parallex parallex3"></div>
+    <div class="content">
+        <h1>FLOWER'S</h1>
+        <p>Flowers have long been admired and used by human beings.people also eat some type of flowers.flower vegetables such as brocoli cauli flower
+            cabbage and arti choke are some of the eatable flower vegetables.</p>
+    </div>
+</body>
+</html>

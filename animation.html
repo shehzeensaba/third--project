@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change Animation</title>
+    <style>
+        .color-change {
+            width: 100px;
+            height: 100px;
+            background-color: #9b59b6;
+            margin: 50px auto;
+            animation: colorChange 4s infinite;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: #9b59b6;
+            }
+            25% {
+                background-color: #3498db;
+            }
+            50% {
+                background-color: #e74c3c;
+            }
+            75% {
+                background-color: #2ecc71;
+            }
+            100% {
+                background-color: #9b59b6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="color-change"></div>
+</body>
+</html>
+
+
+
+example:1)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .bounce {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-150px);
+            }
+            60% {
+                transform: translateY(-75px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bounce"></div>
+</body>
+</html>
+example:2)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Animation</title>
+    <style>
+        .rotate {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            margin: 50px auto;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate"></div>
+</body>
+</html>
+
+example:3)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In and Out Animation</title>
+    <style>
+        .fade {
+            width: 100px;
+            height: 100px;
+            background-color: #2ecc71;
+            margin: 50px auto;
+            animation: fade 3s infinite;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade"></div>
+</body>
+</html>
+example:4)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 200px;
+        animation-timing-function: ease-out;
+    }
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
+example:5)(slide)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slide Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Hide the overflowing content */
+    width: 100%; /* Ensure the container takes the full width */
+    height: 500px; /* Set a fixed height for the container */
+}
+
+.slide {
+    position: absolute;
+    animation: slide 5s infinite; /* Slide animation lasting 5 seconds and repeating infinitely */
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {transform: translateX(100%);} /* Start outside the right edge */
+    100% {transform: translateX(-100%);} /* End outside the left edge */
+}
+
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="flowershop1.jpg" alt="Image 1">
+        </div>
+    </div>
+</body>
+</html>
+example:5{book type}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.book {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    animation: open 2s forwards;
+}
+
+.cover .front, .cover .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cover .front {
+background-image: url(flowershop1.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px solid #3e4e5e;
+}
+
+.cover .back {
+    background-color: #c8d6e5;
+    transform: rotateY(180deg);
+    border: 2px solid #c8d6e5;
+}
+
+.pages {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid sandybrown;
+    animation: flip 1s forwards;
+}
+
+.page:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.page:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.page:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+@keyframes open {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="cover">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="pages">
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+        </div>
+    </div>
+</body>
+</html>
+example:6(one book)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Opening Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.book {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.cover, .page, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: left;
+}
+
+.cover {
+    background-image: url(flowershop1.jpg);
+    transform: rotateY(0deg);
+    z-index: 3;
+    animation: openCover 2s forwards;
+}
+
+.page {
+   background-image: url(a3.jpg);
+    border-left: 2px solid #3e4e5e;
+    transform: rotateY(0deg);
+    z-index: 2;
+    animation: openPage 2s forwards 1s;
+}
+.page {
+   background-image: url(a3.jpg);
+    border-left: 2px solid #3e4e5e;
+    transform: rotateY(0deg);
+    z-index: 2;
+    animation: openPage 2s forwards 1s;
+}
+
+.back {
+    background-color: #c8d6e5;
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+@keyframes openCover {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes openPage {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="cover"></div>
+        <div class="page"></div>
+    </div  class="">
+        <div class="back"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.book {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform-origin: left;
+    animation: flip 3s infinite;
+}
+
+.page1 {
+    z-index: 4;
+}
+
+.page2 {
+    z-index: 3;
+    transform: rotateY(-1deg);
+}
+
+.page3 {
+    z-index: 2;
+    transform: rotateY(-2deg);
+}
+
+.page4 {
+    z-index: 1;
+    transform: rotateY(-3deg);
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
